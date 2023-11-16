@@ -2,14 +2,18 @@
 
 [![npm](https://img.shields.io/npm/l/ctr.svg)](https://github.com/ctr-lang/ctr/blob/master/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/ctr.svg)](https://www.npmjs.com/package/ctr)
-[![wercker status](https://app.wercker.com/status/84c092950c198fdbb5507431dd9f77f5/s/master "wercker status")](https://app.wercker.com/project/byKey/84c092950c198fdbb5507431dd9f77f5)
-[![David](https://img.shields.io/david/ctr-lang/ctr.svg)](https://github.com/ctr-lang/ctr/blob/master/package.json)
-
 
 <p align="center">
   <img src="https://cdn.rawgit.com/ctr-lang/ctr/ca577675/ctr-logo.svg" width="256">
 </p>
 
+
+##  Preamble Context
+I wrote ctr a lifetime ago and while the core principles of ctr remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, aside from a few dated elements, ctr has stood the test of time and has proven to be rock solid through years of my daily use. Which is why I've decided to keep the original text as is — as both a genuine glimpse into the foundation of 10xCSS and a starting point for future endeavors.
+
+Notes
+
+For an optimal experience, use Node v10.24.1; however, newer Node versions should also be compatible. There is a rare-ish edge case involving deeply nested states and their interactions with elements. In which, the state pseudo-class (:hover, :focus) may be incorrectly applied to the component rather than the element. To be honest, I can't recall the exact specifics, but it's related to changes in the array sorting behavior in Node v10.24.1+ and Immutable.js v3.8.1.
 
 ## Description
 
