@@ -3,11 +3,6 @@
 [![npm](https://img.shields.io/npm/l/ctr.svg)](https://github.com/ctr-lang/ctr/blob/master/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/ctr.svg)](https://www.npmjs.com/package/ctr)
 
-<p align="center">
-  <img src="https://cdn.rawgit.com/ctr-lang/ctr/ca577675/ctr-logo.svg" width="256">
-</p>
-
-
 ##  Preamble Context
 I wrote `ctr` a lifetime ago, and while the core principles of `ctr` remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, aside from a few dated elements, `ctr` has stood the test of time and has proven to be rock-solid through years of my daily use. Which is why I've decided to keep the original text as it is — as both a genuine glimpse into the foundation of 10xCSS and a starting point for future endeavors.
 
