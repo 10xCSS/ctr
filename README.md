@@ -9,11 +9,10 @@
 
 
 ##  Preamble Context
-I wrote ctr a lifetime ago and while the core principles of ctr remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, aside from a few dated elements, ctr has stood the test of time and has proven to be rock solid through years of my daily use. Which is why I've decided to keep the original text as is — as both a genuine glimpse into the foundation of 10xCSS and a starting point for future endeavors.
+I wrote `ctr` a lifetime ago, and while the core principles of `ctr` remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, aside from a few dated elements, `ctr` has stood the test of time and has proven to be rock-solid through years of my daily use. Which is why I've decided to keep the original text as it is — as both a genuine glimpse into the foundation of 10xCSS and a starting point for future endeavors.
 
-Notes
+**Usage Notes**: If you want to give `ctr` a test spin, I'd recommend doing so through the live docs at [docs.ctr-lang.com](https://docs.ctr-lang.com/), where you can experiment without needing to install anything. Otherwise, for an optimal experience, use Node `v10.24.1`; however, newer Node versions should also be compatible. There is a rare-ish edge case involving deeply nested states and their interactions with elements, in which the state pseudo-class (`:hover, :focus`) may be incorrectly applied to the component rather than the element. To be honest, I can't recall the exact specifics, but it's related to changes in the array sorting behavior in Node `v10.24.1+` and Immutable.js `v3.8.1`.
 
-For an optimal experience, use Node v10.24.1; however, newer Node versions should also be compatible. There is a rare-ish edge case involving deeply nested states and their interactions with elements. In which, the state pseudo-class (:hover, :focus) may be incorrectly applied to the component rather than the element. To be honest, I can't recall the exact specifics, but it's related to changes in the array sorting behavior in Node v10.24.1+ and Immutable.js v3.8.1.
 
 ## Description
 
