@@ -7,39 +7,15 @@ __The Underlying CSS Framework that Makes [10xCSS](https://10xcss.com/) Possible
 ##  Preamble Context
 I wrote `ctr` a lifetime ago, and while the core principles of `ctr` remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, aside from a few dated elements, `ctr` has stood the test of time and has proven to be rock-solid through years of my daily use. Which is why I've decided to keep the original text as it is — as both a genuine glimpse into the foundation of 10xCSS and a starting point for future endeavors.
 
-**Usage Notes**: If you want to give `ctr` a test spin, I'd recommend doing so through the live docs at [docs.ctr-lang.com](https://docs.ctr-lang.com/), where you can experiment without needing to install anything. Otherwise, for an optimal experience, use Node `v10.24.1`; however, newer Node versions should also be compatible. There is a rare-ish edge case involving deeply nested states and their interactions with elements, in which the state pseudo-class (`:hover, :focus`) may be incorrectly applied to the component rather than the element. To be honest, I can't recall the exact specifics, but it's related to changes in the array sorting behavior in Node `v10.24.1+` and Immutable.js `v3.8.1`.
-
-
 ## Description
 
-There are many words/examples you can read in the [documentation](https://docs.ctr-lang.com/) that detail what, why, and how, but I’ll give a brief overview. `ctr` is a CSS framework built with JavaScript to provide object oriented functionality to allow for a rich hierarchy of inherited CSS components to better facilitate a CSS architecture similar to [OOCSS](https://github.com/stubbornella/oocss/wiki). Albeit `ctr` and OOCSS differ vastly in application and you construct your CSS in `ctr` using true objects which allows for `ctr` to be constructed in [YAML](http://yaml.org/), JavaScript, and [Less](http://lesscss.org/). Although `ctr` shares the same goal of OOCSS - encouraging code reuse as well as maintainable CSS styles.
+`ctr` is a CSS framework designed to streamline the creation, iteration, and management of CSS logic, with a special focus on pseudo-classes like `hover`, `focus`, and `active`. By leveraging a DOM-like hierarchical structure and a straightforward key-value pair syntax, it offers an intuitive approach to detailed style encapsulation with various helpers such as `hover` and `before`, to eliminate many of the tedious aspects of CSS development.
 
-The object oriented architecture of `ctr` also allows for a rich hierarchy of inherited CSS components so that it’s not required to list each class in your HTML every single time. A functionality that is encompassed through the [class](https://docs.ctr-lang.com/class/general/) feature of `ctr`. An idea presented by [Philip Walton](philipwalton.com/about/) and his article [The Future of OOCSS: A Proposal](https://philipwalton.com/articles/the-future-of-oocss-a-proposal/). However, to accomplish this, there has to be a supporting framework, and that is what `ctr` and all its various features provide.
+Read more and explore `ctr` in action through the fully functional and live documentation at [docs.ctr-lang.com](https://docs.ctr-lang.com/), where you can experiment with ctr without needing to install anything.
 
-My favorite feature of `ctr` is its ability to abstract away the tedium and pain-points from creating complex CSS logic for pseudo-classes such as `hover`, `focus`, and `active`. All you need to do is list the CSS properties and values in the [state](https://docs.ctr-lang.com/state/general/) object, and `ctr` automatically configures the proper pseudo-class and the corresponding negation CSS pseudo-class (`:not()`). It also configures the `transition-property`, `transition-duration`, `transition-delay`, and `transition-timing-function` for all CSS properties. Furthermore, `ctr` provides similar abstractions for [animation](https://docs.ctr-lang.com/animation/general/), [elements](https://docs.ctr-lang.com/element/general/) such as `before` and `after`, as well as [media queries](https://docs.ctr-lang.com/media/general/), and much much more.
+## Usage
 
-Finally, `ctr` comes pre-packed with some of the best CSS libraries such as:
-+ Animate.css for animation presets
-    * [Library website](https://daneden.github.io/animate.css/)
-    * [Documentation](https://docs.ctr-lang.com/animation/animate.css/)
-+ LostGrid for a grid framework
-    * [Library website](http://lostgrid.org/)
-    * [Documentation](https://docs.ctr-lang.com/grid/general/)
-+ Responsive text for creating responsive type - `font-size`, `line-height`, and `letter-spacing`
-    * [Library website](https://github.com/seaneking/postcss-responsive-type)
-    * [Documentation](https://docs.ctr-lang.com/helpers/responsive-text/)
-+ Rupture for easy media queries
-    * [Library website](http://jescalan.github.io/rupture/)
-    * [Documentation](https://docs.ctr-lang.com/media/mixin/)
-+ Hover.css for state presets
-    * [Library website](http://ianlunn.github.io/Hover/)
-    * [Documentation](https://docs.ctr-lang.com/state/hover.css/)
-+ CSSgram for image preset filters
-    * [Library website](https://una.im/CSSgram/)
-    * [Documentation](https://docs.ctr-lang.com/helpers/filter/)
-+ Family.scss - :nth-child helpers
-    * [Library website](http://lukyvj.github.io/family.scss/)
-    * [Documentation](https://docs.ctr-lang.com/element/nth-key/)
+If you want to give `ctr` a test spin, I'd recommend doing so through the live docs at [docs.ctr-lang.com](https://docs.ctr-lang.com/), where you can experiment without needing to install anything. Otherwise, for an optimal experience, use Node `v10.24.1`; however, newer Node versions should also be compatible. There is a rare-ish edge case involving deeply nested states and their interactions with elements, in which the state pseudo-class (`:hover, :focus`) may be incorrectly applied to the component rather than the element. To be honest, I can't recall the exact specifics, but it's related to changes in the array sorting behavior in Node `v10.24.1+` and Immutable.js `v3.8.1`.
 
 
 ## Status & Bugs
