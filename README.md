@@ -1,7 +1,8 @@
 # `ctr` /// The CSS Framework
-
 [![npm](https://img.shields.io/npm/l/ctr.svg)](https://github.com/ctr-lang/ctr/blob/master/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/ctr.svg)](https://www.npmjs.com/package/ctr)
+
+__The Underlying CSS Framework that Makes [10xCSS](https://10xcss.com/) Possible__
 
 ##  Preamble Context
 I wrote `ctr` a lifetime ago, and while the core principles of `ctr` remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, aside from a few dated elements, `ctr` has stood the test of time and has proven to be rock-solid through years of my daily use. Which is why I've decided to keep the original text as it is — as both a genuine glimpse into the foundation of 10xCSS and a starting point for future endeavors.
@@ -41,14 +42,9 @@ Finally, `ctr` comes pre-packed with some of the best CSS libraries such as:
     * [Documentation](https://docs.ctr-lang.com/element/nth-key/)
 
 
-## Status
+## Status & Bugs
 
-As I've outlined over at [ctr-lang.com](https://ctr-lang.com) and in the [documentation](https://docs.ctr-lang.com), the code base is extended way past its means. <s>That being said, the hope is that I'll be able to secure funding to embark on a rewrite from the ground up.</s> At the same time, things are pretty solid, so it goes without saying I believe and hope it will be nothing but smooth sailing for you as well.
-
-
-## Bugs & Contributions
-
-I'm on the fence as to how I want to handle bug and contributions, but I'll lay down my current thoughts. I initially had hoped to raise funding for a rewrite but that obviously was wishful thinking, although, not all is lost because the code base is workable up to a point. I'll gladly spend the time fixing bugs if they warrant the time. However, if it's a complex edge case I doubt I will spend the time. So if you think it warrants my time and yours by all accounts, please pull an issue.
+The current state of `ctr` is closely linked with the success of 10xCSS, with the goal/hope that 10xCSS will generate the necessary resources and funds for the next iteration. However, this version has largely been archived. In the meantime, I'm open to addressing bugs that significantly affect usability, so if you encounter an issue you believe is important and merits attention, I encourage you to report it.
 
 
 ## Structure
@@ -56,7 +52,7 @@ I'm on the fence as to how I want to handle bug and contributions, but I'll lay 
 For the time being, all `ctr` assets reside under this repository, that is the, Stylus plugin, Less plugin, YAML API, and the JavaScript API. Hopefully, the rewrite will materialize, and if that's the case, I'll separate assets out to create a much cleaner structure.
 
 
-+ `/lib` -> Allz the magic
++ `/lib` -> All the magic
     * `ctr-stylus.js` -> Stylus Plugin Logic
     * `ctr-less.js` -> Less Plugin Logic
     * `ctr-js.js` -> Js API class constructor
@@ -64,9 +60,5 @@ For the time being, all `ctr` assets reside under this repository, that is the, 
     * `/ctr-js-nodes` -> The actual logic behind `ctr`
 + `/dist`
     * `ctr.styl` -> The most important file, which is both embarrassing and impressive in its own right. This Stylus file contains two Stylus Functions that act as a janky templating solution to provide the proper syntactical structure. Along the lines of mustache but for CSS. Removing this file; thus the Stylus dependency is one of the main reasons for the rewrite.
-+ `__tests__` -> Allz the test, and it has it's own `README.md`
++ `__tests__` -> All the test, and it has it's own `README.md`
 
-
----
-
-Best, te
