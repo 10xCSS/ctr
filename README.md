@@ -2,7 +2,7 @@
 [![npm](https://img.shields.io/npm/l/ctr.svg)](https://github.com/ctr-lang/ctr/blob/master/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/ctr.svg)](https://www.npmjs.com/package/ctr)
 
-__The Underlying CSS Framework that Makes [10xCSS](https://10xcss.com/) Possible__
+__The Underlying CSS Framework That Makes [10xCSS](https://10xcss.com/) Tick__
 
 ##  Preamble Context
 I wrote `ctr` a lifetime ago, and while the core principles of `ctr` remain intact, some of the specific details might not wholly align with my current perspective. Nevertheless, apart from a few dated elements, `ctr` has endured the test of time and proved its reliability over years of daily use, and most notably, it makes [10xCSS.com](https://10xcss.com/) tick.
